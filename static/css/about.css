@@ -1,0 +1,98 @@
+ /* about.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #121212;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 255, 213, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffd5;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00ffd5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.05);
+}
+
+h2 {
+    text-align: center;
+    color: #00ffd5;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #dddddd;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+}
+
+.conclusion {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #111927;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conclusion h2 {
+    color: #00ffd5;
+    margin-bottom: 10px;
+}
+
+/* Hover effect */
+.conclusion:hover {
+    background-color: #1a2536;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+}

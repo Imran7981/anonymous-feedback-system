@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Feedback Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/ano-logo.jpeg') }}">
+</head>
+<body>
+    <div class="nav-part">
+        <nav>
+            <div class="logo">AnonSys</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                 <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Anonymous Feedback</h2>
+
+        <!-- FORM STARTS HERE -->
+        <form method="POST" action="{{ url_for('feedback') }}" enctype="multipart/form-data">
+            <textarea name="feedback" id="feedback" placeholder="Enter your Feedback" rows="5" required></textarea>
+            <input type="file" name="media" id="fileInput" accept="image/*,video/*">
+            <button type="submit" class="submitbtn">Submit</button>
+        </form>
+        <!-- FORM ENDS HERE -->
+
+        <h3 style="margin-top: 30px; color: #00ffd5;">Local Feedback Entries</h3>
+        <div id="localDisplay"></div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Anonymous Feedback System</p>
+    </footer>
+</body>
+</html>

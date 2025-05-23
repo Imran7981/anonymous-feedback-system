@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anonymous Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Anonymous Access</h2>
+    
+    <!-- Form must submit using POST to Flask -->
+    <form method="POST" action="{{ url_for('login') }}">
+      <label for="username">Username (Alias)</label>
+      <input type="text" name="username" placeholder="Enter anonymous alias" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

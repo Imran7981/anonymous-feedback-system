@@ -1,0 +1,45 @@
+ <!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Anonymous Feedback System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/ano-logo.jpeg') }}">
+</head>
+<body><nav>
+    <div class="logo">AnonSys</div>
+    <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Anonymous Feedback System</h1>
+    <p class="tagline">To encourage students to talk without fear</p>
+</section>
+
+ <section class="image-section">
+    <img src="{{ url_for('static', filename='css/about_page.jpg') }}" alt="Feedback Illustration" class="illustration">
+</section>
+
+<section class="why-section">
+    <h2>Why This System?</h2>
+    <p>
+        The Anonymous Feedback System provides a safe space for students to express concerns, suggestions, and thoughts
+        without fear of judgment or retaliation. It empowers institutions to listen better and improve continuously.
+        Traditional feedback methods often fail to capture the honest opinions of students due to fear of judgment or consequences. This anonymous system bridges that gap by creating a secure and judgment-free zone where every voice matters. It not only boosts student confidence but also helps institutions identify real issues and areas for improvement, fostering a culture of transparency and growth.
+    </p>
+</section>
+
+<section class="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+        The Anonymous Feedback System is more than just a project — it’s a step toward open communication, trust-building, and emotional safety for every student. 
+        By providing a platform free from judgment or identity exposure, this system empowers voices that often go unheard. 
+        With a clean interface, media upload options, and admin control, it aims to build a bridge between students and educators — where honest conversations lead to positive change.
+    </p>
+</section>
+
+</body>
+</html>
