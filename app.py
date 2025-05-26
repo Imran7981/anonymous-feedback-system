@@ -8,8 +8,8 @@ from datetime import timedelta
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 app.permanent_section_lifetime = timedelta(minutes=1)
-ADMIN_USERNAME = 'imran'
-ADMIN_PASSWORD = 'imran1234'
+ADMIN_USERNAME = 'admin'
+ADMIN_PASSWORD = '1234'
 
 @app.route('/admin-login', methods=['GET', 'POST'])
 def admin_login():
