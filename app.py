@@ -39,7 +39,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 init_db()
 
 # Home route
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html')
 
